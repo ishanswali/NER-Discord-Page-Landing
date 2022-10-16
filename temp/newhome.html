@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <title>CAP NER Discord Test</title>
+  <link rel="stylesheet" type="text/css" href="newhome.css" />
+</head>
+
+<body>
+  <section class="main">
+    <header>
+      <div class="logo">
+        <a href="https://www.gocivilairpatrol.com/"><img alt="CAP Logo" src="images/CAPLogo.png" id="capimg" /></a>
+      </div>
+
+      <div class="toggle"></div>
+    </header>
+
+    <video src="images/capvideo4k.mp4" muted loop autoplay></video>
+
+    <div class="content">
+      <img src="images/roundel.png" alt="CAPRoundel" class="centerimg" />
+      <h1 class="centertxt">NORTHEAST REGION DISCORD SERVER</h1>
+      <h2 class="centertxt2">
+        DEVELOPING DYNAMIC AMERICANS THROUGH CYBER POWER
+      </h2>
+      <p class="centertxt3">
+        The Northeast Region Discord is the official server and social
+        platform for one of the eight regions of Civil Air Patrol, the
+        United States Air Force Auxiliary.
+      </p>
+      <p class="centertxt joinbtn"><a href="./join">Join</a></p>
+      <p id="footer">Copyright © 2021 Northeast Region Civil Air Patrol. All Rights Reserved. <a
+          href="#" target="_blank">Legal
+          and Privacy Statement</a></p>
+    </div>
+  </section>
+
+
+
+  <div class="mymenu">
+    <ul>
+      <li><a href="./joinserver">JOIN SERVER</a></li>
+      <li><a href="./faq">FAQ</a></li>
+      <li><a href="./rules">RULES</a></li>
+      <li><a href="./guide">GUIDE</a></li>
+      <li>
+        <hr>
+      </li>
+      <li><a href="./login">STAFF LOG IN</a></li>
+    </ul>
+  </div>
+</body>
+
+<script>
+  const menuTog = document.querySelector(".mymenu");
+  const contentTog = document.querySelector(".main");
+  const toggleThing = document.querySelector(".toggle");
+
+  toggleThing.addEventListener("click", () => {
+    menuTog.classList.toggle("active");
+    contentTog.classList.toggle("active");
+  });
+</script>
+
+</html>

@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Poster";
+  src: url("resources/PosterGothicATF-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("resources/Lato-Regular.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#capimg {
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: 75px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.toggle {
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.main {
+  background-color: gray;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.main {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.5s;
+  z-index: 2;
+  background-color: #0e2b8d;
+}
+
+
+.main.active {
+    right: 300px;
+}
+
+.main video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.mymenu {
+  background-color: rgb(7, 24, 78);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mymenu li {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mymenu li a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.mymenu li:hover a {
+  color: rgb(219, 0, 41);
+  font-size: 25px;
+}
+
+hr{
+    width: 200px;
+    font-size: 25px;
+}
+
+.content {
+  z-index: 2000;
+  position: relative;
+  top: 200px;
+  font-family: Poster, sans-serif;
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 0vh;
+}
+
+.centertxt {
+  font-size: 24px;
+  text-align: center;
+  color: aliceblue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: auto;
+  max-width: 750px;
+  max-height: 750px;
+  margin-top: 20px;
+}
+
+.centertxt2 {
+  max-width: 750px;
+  max-height: 750px;
+  font-size: 36px;
+  text-align: center;
+  color: aliceblue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: auto;
+  margin-top: 20px;
+}
+
+.centertxt3 {
+  font-family: Lato;
+  max-width: 750px;
+  max-height: 750px;
+  font-size: 18px;
+  text-align: center;
+  color: aliceblue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: auto;
+  margin-top: 20px;
+}
+
+.joinbtn {
+  font-family: Lato;
+  margin-top: 40px;
+  font-size: 25px;
+  background: rgb(219, 0, 41, 0.75);
+  width: 125px;
+  border-radius: 75px;
+  padding: 5px;
+}
+
+.joinbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer{
+  color: white;
+  position: relative;
+  z-index: 20;
+  font-family: Lato;
+  max-width: 750px;
+  max-height: 750px;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: auto;
+  margin-top: 35px;
+}
+
+#footer a{
+  color: white;
+}

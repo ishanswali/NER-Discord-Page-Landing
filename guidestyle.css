@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#title {
+  float: right;
+  padding-right: 50px;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+
+#capimg {
+  float: left;
+}
+
+.menubar {
+  overflow: hidden;
+  background-color: #0e2b8d;
+  top: 0;
+  width: 100%;
+}
+
+.menubar a {
+  font-family: sans-serif;
+  color: white;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#overview {
+  background-color: #b90d2f;
+  color: white;
+  padding-left: 50px;
+  font-weight: normal;
+}
+
+.content {
+  padding-left: 50px;
+}
+
+.introtxt {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: elementcounter;
+  padding-left: 15px;
+}
+
+li:before {
+  content: "Step " counter(elementcounter) ". ";
+  counter-increment: elementcounter;
+  font-weight: bold;
+}
+
+#users {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leftlinks {
+  margin: 2vh;
+  float: left;
+}
+
+.leftlinks:hover {
+  background-color: darkgray;
+}
+
+.rightlinks {
+  margin: 2vh;
+  float: right;
+}
+
+.rightlinks:hover {
+  background-color: darkgray;
+}
